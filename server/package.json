@@ -1,0 +1,36 @@
+{
+  "dependencies": {
+    "@types/graphql": "^14.5.0",
+    "apollo-server-express": "^3.12.0",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "gapi-client": "^0.0.3",
+    "googleapis": "^120.0.0",
+    "graphql": "^16.6.0",
+    "lodash.merge": "^4.6.2",
+    "mongodb": "^5.5.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.17",
+    "@types/lodash.merge": "^4.6.7",
+    "@types/mongodb": "^4.0.7",
+    "@types/node": "^20.2.3",
+    "@typescript-eslint/eslint-plugin": "^5.59.7",
+    "@typescript-eslint/parser": "^5.59.7",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.41.0",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "start": "nodemon src/index.ts",
+    "build": "tsc -p ./",
+    "seed": "ts-node temp/seed.ts",
+    "clear": "ts-node temp/clear.ts"
+  }
+}
